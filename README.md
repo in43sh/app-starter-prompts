@@ -9,9 +9,11 @@ Copy the relevant prompt into your AI assistant, answer the staged questions, an
 ## Prompts
 
 | File | Purpose |
-|------|---------|
+| --- | --- |
 | [docs/00-kickoff-web-app.md](docs/00-kickoff-web-app.md) | Web / frontend project kickoff — produces `MVP_DOCUMENT.md`, `DECISIONS.md`, `OPEN_QUESTIONS.md` |
 | [docs/00-kickoff-api.md](docs/00-kickoff-api.md) | API / backend project kickoff — produces `API_DOCUMENT.md`, `DECISIONS.md`, `OPEN_QUESTIONS.md` |
+| [docs/01-feature-spec.md](docs/01-feature-spec.md) | Plan a new feature in an existing project — produces `FEATURE_SPEC.md`, `IMPLEMENTATION_PLAN.md` |
+| [docs/02-claude-md.md](docs/02-claude-md.md) | Generate a `CLAUDE.md` quick-reference for an existing codebase |
 
 ## Output documents
 
