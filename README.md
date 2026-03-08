@@ -4,7 +4,12 @@ A collection of structured AI prompts for kicking off new software projects. Use
 
 ## How to use
 
-Copy the relevant prompt into your AI assistant, answer the staged questions, and receive a full project specification document ready for vibecoding.
+1. Pick the prompt that matches your situation (see table below)
+2. Copy the entire file contents
+3. Paste it into your AI assistant as your first message
+4. Answer the staged questions — the AI guides you through them one stage at a time
+5. At the end, the AI generates the output documents
+6. Save those files into your project's `/docs` folder and start building
 
 ## Prompts
 
