@@ -61,6 +61,8 @@ A complete, self-contained spec for the feature. Include every section below:
 - **Data Changes** — new tables, new columns, migrations, indexes. Include field name, type, constraints, and purpose for each. If none, omit.
 - **Permissions & Access Control** — who can access what, and how it's enforced (middleware, RLS, UI hiding, etc.)
 - **Edge Cases & Error Handling** — exhaustive list of edge cases and how each is handled
+- **Existing Flow Impact** — which current screens, APIs, jobs, or workflows change because of this feature, what behavior changes for existing users, and any backward-compatibility concerns
+- **Regression Risks** — the highest-risk areas this feature could break, why they are risky, and what safeguards or tests are required before shipping
 - **Third-Party Services** — any external APIs or services involved, what they do, failure behavior
 - **Feature Flag** — whether one is needed, how to enable/disable, what state to show when disabled. Omit if not applicable.
 - **Rollout & Rollback** — rollout sequence (dark launch, internal, % of users, full), how to verify it's working, and step-by-step rollback plan if something goes wrong. Omit if not applicable.
@@ -77,6 +79,7 @@ A concrete task breakdown for building the feature. For each task:
 - **What it involves** — 2–3 sentences describing the work
 - **Files to create or modify** — specific file paths where known
 - **Acceptance criteria** — how to know when this task is done
+- **Regression considerations** — existing behavior that must still work after this task lands
 - **Depends on** — which other tasks must be completed first (if any)
 
 End with a **risk table**: task, risk level (low/medium/high), mitigation.

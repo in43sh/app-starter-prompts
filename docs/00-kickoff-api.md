@@ -60,12 +60,13 @@ After I answer, produce the following three documents:
 A complete, self-contained implementation spec. Include every section below:
 
 - **Project Overview** — one-paragraph brief and tech stack table
-- **API Design** — style (REST/GraphQL/RPC), base URL, versioning strategy, content types
+- **API Design** — style (REST/GraphQL/RPC), base URL, versioning strategy, content types, pagination/filtering/sorting conventions, and deprecation/backward-compatibility rules
 - **Authentication & Authorization** — auth method, token format, how consumers obtain credentials, protected vs. public endpoints
-- **Endpoints** — for every endpoint: method, path, description, path/query params, request body (with types), response shape (with types), error cases. Use a consistent format throughout.
+- **Endpoints** — for every endpoint: method, path, description, path/query params, request body (with types), response shape (with types), error cases, and idempotency expectations where applicable. Use a consistent format throughout.
 - **Error Handling** — standard error response format, HTTP status code conventions, error code catalogue
 - **Data Architecture** — full database schema (table/collection, field name, type, constraints, notes for every field), indexes worth noting
 - **Background Jobs / Events / Webhooks** — for each: name, trigger, what it does, retry/failure handling. Include outbound webhooks (event, payload shape, delivery guarantees). Omit section if none.
+- **Upstream Integrations** — for each external dependency: purpose, timeout expectations, retry policy, circuit-breaking/fallback behavior, and what happens when the upstream service is degraded or unavailable. Omit if none.
 - **Rate Limiting** — limits per consumer type, headers returned, behavior when exceeded (omit if none)
 - **Security** — secret management, input validation, injection prevention, sensitive data handling, CORS policy
 - **Project Structure** — full folder/file tree with inline comments explaining each file's role

@@ -58,6 +58,7 @@ A complete, self-contained implementation spec. Include every section below:
 - **Design System** — colors (name, hex, usage), typography (font family, weights), effects (shadows, borders)
 - **Pages & Features** — each page/screen with all UI elements, component variants, and behavior described precisely enough to build from
 - **Data Architecture** — full database schema (field name, type, notes for every field), all API endpoints (method, path, purpose, query params, response shape)
+- **Permissions & Access Control** — user roles, protected routes/pages, role-specific UI states, and how access is enforced in the app and backend. Omit only if the project is fully public and has no privileged actions.
 - **Admin Workflow** — step-by-step process for any manual data management, time estimates, automation options
 - **User Flows** — numbered step-by-step flows for each primary use case
 - **Empty States** — what to show when there is no data, for each relevant section
