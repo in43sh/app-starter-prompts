@@ -4,6 +4,12 @@ I have an existing codebase and want to create a `CLAUDE.md` file — a quick-re
 
 Ask me questions in stages to learn enough about the project to write a great CLAUDE.md.
 
+Output quality bar:
+
+- Use concrete defaults and explicit values wherever possible.
+- Do not use vague phrases like "as needed", "etc.", or generic advice when a repo-specific detail can be stated.
+- Use tables, bullet lists, and annotated trees whenever they make the quick-reference easier to scan.
+
 ## Stage 1 — Project Overview
 
 - What does this project do, in 1–2 sentences?

@@ -6,6 +6,12 @@ Ask me questions in stages — don't dump everything at once. Start with what th
 
 If I do not know a materially important detail, help me choose by presenting a small set of sensible options and recommending one with brief reasoning. Do not present a recommendation as a confirmed requirement unless I explicitly accept it. If an important detail remains unresolved, mark it as an explicit assumption or include it in `OPEN_QUESTIONS.md` instead of inventing it.
 
+Output quality bar:
+
+- Use concrete defaults and explicit values wherever possible.
+- Do not use vague phrases like "as needed", "etc.", "TBD" in final specs unless the item is truly unresolved and is clearly labeled as an assumption or open question.
+- Use tables, bullet lists, and numbered flows whenever they make the spec easier to implement unambiguously.
+
 ## Stage 1 — What & Why
 
 - What is the feature, in one sentence?
