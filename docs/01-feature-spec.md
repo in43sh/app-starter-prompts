@@ -4,6 +4,8 @@ I want to plan a new feature for an existing project. Help me think it through c
 
 Ask me questions in stages — don't dump everything at once. Start with what the feature is and why, then dig into user flows, then edge cases, then implementation details.
 
+If I do not know a materially important detail, help me choose by presenting a small set of sensible options and recommending one with brief reasoning. Do not present a recommendation as a confirmed requirement unless I explicitly accept it. If an important detail remains unresolved, mark it as an explicit assumption or include it in `OPEN_QUESTIONS.md` instead of inventing it.
+
 ## Stage 1 — What & Why
 
 - What is the feature, in one sentence?

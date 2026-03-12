@@ -4,6 +4,8 @@ I want to start a new backend project. Help me think through it from scratch —
 
 Ask me questions in stages — don't dump everything at once. Start with vision and goals, then dig into consumers and contracts, then requirements, then tech stack, then structure. Wait for my answers before moving to the next stage.
 
+If I do not know a materially important detail, help me choose by presenting a small set of sensible options and recommending one with brief reasoning. Do not present a recommendation as a confirmed requirement unless I explicitly accept it. If an important detail remains unresolved, mark it as an explicit assumption or include it in `OPEN_QUESTIONS.md` instead of inventing it.
+
 ## Stage 1 — Vision
 
 - What problem does this solve?
