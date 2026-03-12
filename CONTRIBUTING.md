@@ -2,7 +2,7 @@
 
 ## Adding a new prompt
 
-1. Create a file in `docs/` with the next available number prefix (e.g. `01-kickoff-mobile.md`)
+1. Create a file in `docs/` with the next available number prefix (e.g. `03-kickoff-mobile.md`)
 2. Follow the existing structure: staged questions → output document specs
 3. Update the table in [README.md](README.md)
 
@@ -14,11 +14,11 @@
 
 ## Naming convention
 
-```
+```text
 docs/NN-<type>-<variant>.md
 ```
 
-Examples: `00-kickoff-web-app.md`, `00-kickoff-api.md`, `01-planning-sprint.md`
+Examples: `00-kickoff-web-app.md`, `00-kickoff-api.md`, `01-feature-spec.md`, `03-kickoff-mobile.md`
 
 ## Submitting changes
 

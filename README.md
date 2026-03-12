@@ -22,8 +22,17 @@ A collection of structured AI prompts for kicking off new software projects. Use
 
 ## Output documents
 
-Each prompt guides the AI through 5 stages of questions, then generates:
+**Kickoff prompts** (`00-kickoff-*.md`) produce:
 
-- **MVP_DOCUMENT / API_DOCUMENT** — complete implementation spec (pages, schema, endpoints, security, project structure, env vars, build order)
+- **MVP_DOCUMENT.md / API_DOCUMENT.md** — complete implementation spec (pages, schema, endpoints, security, project structure, env vars, build order)
 - **DECISIONS.md** — architectural decision records (ADRs) with alternatives and rationale
 - **OPEN_QUESTIONS.md** — unresolved questions, edge cases, and post-v1 ideas
+
+**Feature spec** (`01-feature-spec.md`) produces:
+
+- **FEATURE_SPEC.md** — complete feature spec (flows, UI, API/data changes, permissions, edge cases, observability, rollout)
+- **IMPLEMENTATION_PLAN.md** — task breakdown with acceptance criteria, dependencies, and risk table
+
+**CLAUDE.md generator** (`02-claude-md.md`) produces:
+
+- **CLAUDE.md** — AI quick-reference: stack, commands, structure, conventions, env vars, do-nots

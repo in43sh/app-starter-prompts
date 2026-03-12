@@ -1,8 +1,8 @@
 # API / Backend Kickoff
 
-I want to start a new backend project. Help me think through it from scratch — the goal is to produce a complete, AI-ready spec that I can use for vibecoding.
+I want to start a new backend project. Help me think through it from scratch — the goal is to produce a complete, AI-ready spec that I can hand to an AI coding assistant to build from.
 
-Ask me questions in stages — don't dump everything at once. Start with vision and goals, then dig into consumers and contracts, then requirements, then tech stack, then structure.
+Ask me questions in stages — don't dump everything at once. Start with vision and goals, then dig into consumers and contracts, then requirements, then tech stack, then structure. Wait for my answers before moving to the next stage.
 
 ## Stage 1 — Vision
 
@@ -63,7 +63,7 @@ A complete, self-contained implementation spec. Include every section below:
 - **Endpoints** — for every endpoint: method, path, description, path/query params, request body (with types), response shape (with types), error cases. Use a consistent format throughout.
 - **Error Handling** — standard error response format, HTTP status code conventions, error code catalogue
 - **Data Architecture** — full database schema (table/collection, field name, type, constraints, notes for every field), indexes worth noting
-- **Background Jobs / Events** — job name, trigger, what it does, failure handling (omit section if none)
+- **Background Jobs / Events / Webhooks** — for each: name, trigger, what it does, retry/failure handling. Include outbound webhooks (event, payload shape, delivery guarantees). Omit section if none.
 - **Rate Limiting** — limits per consumer type, headers returned, behavior when exceeded (omit if none)
 - **Security** — secret management, input validation, injection prevention, sensitive data handling, CORS policy
 - **Project Structure** — full folder/file tree with inline comments explaining each file's role

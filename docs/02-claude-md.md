@@ -34,6 +34,7 @@ Ask me questions in stages to learn enough about the project to write a great CL
 - What's the git branching strategy? (main + feature branches, develop, trunk-based, etc.)
 - How does deployment work? (push to branch, manual trigger, CI/CD pipeline)
 - Are there any non-obvious setup steps a new developer needs to know?
+- What must pass before a PR can merge? (required CI checks, test coverage thresholds, linting gates)
 
 ## Stage 5 — Architecture & Conventions
 
@@ -54,7 +55,7 @@ A concise, scannable quick-reference for an AI coding assistant. It should be **
 
 - **What this is** — 2–3 sentences: what the project does, who it's for, current state
 - **Tech stack** — bulleted list: language/runtime, framework, database, hosting, key third-party services
-- **Key commands** — code block with the essential dev commands (install, dev, build, test, lint)
+- **Key commands** — code block with the essential dev commands (install, dev, build, test, lint); include any CI check commands that must pass before merging
 - **Project structure** — annotated folder tree (top 2 levels, with one-line comments on each folder's purpose)
 - **Architecture notes** — 3–8 bullet points on patterns that aren't obvious from the file tree (e.g. "API routes in `/api` are Vercel serverless functions, not Express middleware", "All DB access goes through the server-side client in `api/_lib/supabase.js`, never the browser client")
 - **Conventions** — bullet list of naming, styling, and structural rules the AI should follow
@@ -63,6 +64,7 @@ A concise, scannable quick-reference for an AI coding assistant. It should be **
 - **Where to start** — 3–5 most important files to read first to understand the codebase
 
 Format guidelines:
+
 - Use headers and bullets, not paragraphs
 - Prefer specifics over generalities ("use `src/lib/supabaseClient.ts` for all DB queries" not "use the database client")
 - Keep the total length under 150 lines

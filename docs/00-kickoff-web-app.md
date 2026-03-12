@@ -1,8 +1,8 @@
 # Project Kickoff
 
-I want to start a new software project. Help me think through it from scratch — the goal is to produce a complete, AI-ready spec that I can use for vibecoding.
+I want to start a new software project. Help me think through it from scratch — the goal is to produce a complete, AI-ready spec that I can hand to an AI coding assistant to build from.
 
-Ask me questions in stages — don't dump everything at once. Start with vision and goals, then dig into users, then requirements, then tech stack, then structure.
+Ask me questions in stages — don't dump everything at once. Start with vision and goals, then dig into users, then requirements, then tech stack, then structure. Wait for my answers before moving to the next stage.
 
 ## Stage 1 — Vision
 
@@ -60,9 +60,11 @@ A complete, self-contained implementation spec. Include every section below:
 - **User Flows** — numbered step-by-step flows for each primary use case
 - **Empty States** — what to show when there is no data, for each relevant section
 - **Responsive Breakpoints** — breakpoint table with layout behavior per screen size
+- **Error Handling** — error response format, user-facing error messages, logging strategy, failure modes for key flows
 - **Security** — API key protection strategy, XSS prevention, input validation, external link handling
 - **Project Structure** — full folder/file tree with inline comments explaining each file's role
 - **Environment Variables** — client-side vs server-side split, `.env.example` with placeholder values, critical rules (e.g. what to never commit)
+- **Testing Strategy** — what to test at each level (unit, component, e2e), key flows to cover, recommended tools
 - **Implementation Order** — numbered build steps in the correct sequence
 - **Success Metrics** — what to measure post-launch
 

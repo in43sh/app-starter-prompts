@@ -35,7 +35,7 @@ Ask me questions in stages — don't dump everything at once. Start with what th
 - Does this need new API endpoints, or does it extend existing ones?
 - Does this touch the database? (new table, new columns, migrations, indexes)
 - Are there third-party services involved? (storage, email, payments, etc.)
-- What's the estimated complexity? (hours, days, weeks)
+- What's the target complexity budget? (quick fix, multi-day effort, or larger project)
 
 ## Stage 5 — Integration & Rollout
 
@@ -61,6 +61,8 @@ A complete, self-contained spec for the feature. Include every section below:
 - **Edge Cases & Error Handling** — exhaustive list of edge cases and how each is handled
 - **Third-Party Services** — any external APIs or services involved, what they do, failure behavior
 - **Feature Flag** — whether one is needed, how to enable/disable, what state to show when disabled. Omit if not applicable.
+- **Rollout & Rollback** — rollout sequence (dark launch, internal, % of users, full), how to verify it's working, and step-by-step rollback plan if something goes wrong. Omit if not applicable.
+- **Testing** — key test cases to write (unit, integration, e2e as appropriate), critical paths to cover, and any edge cases that must have test coverage before shipping.
 - **Observability** — what to log, what metrics to track, what alerts to set up
 - **Implementation Order** — numbered build steps in the correct sequence (backend before frontend where applicable)
 - **Open Questions** — unresolved decisions, unknowns, or items to confirm before starting
