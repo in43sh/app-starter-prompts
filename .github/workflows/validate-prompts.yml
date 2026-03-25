@@ -1,0 +1,27 @@
+name: Validate Prompts
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install ripgrep
+        run: sudo apt-get update && sudo apt-get install -y ripgrep
+
+      - name: Make validation scripts executable
+        run: chmod +x scripts/check-examples-headings.sh scripts/check-forbidden-patterns.sh
+
+      - name: Validate example headings
+        run: ./scripts/check-examples-headings.sh
+
+      - name: Validate forbidden patterns
+        run: ./scripts/check-forbidden-patterns.sh

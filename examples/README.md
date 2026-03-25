@@ -8,5 +8,7 @@ Keep these examples structurally aligned with the current prompt docs. If a prom
 - `00-kickoff-api/` contains a fictional backend kickoff for a package-tracking notification API.
 - `01-feature-spec/` contains a fictional feature spec for saved search alerts in an existing app.
 - `02-claude-md/` contains a fictional `CLAUDE.md` for a SaaS monorepo.
+- `03-roadmap/` contains a fictional phased roadmap and build tracker for the BlockParty web app.
+- `04-design/` contains a fictional `DESIGN_PROMPT.md` for the BlockParty web app.
 
 The examples are intentionally concise, but they should still feel implementation-ready rather than aspirational.

@@ -76,8 +76,6 @@ Protected routes: `/post`, `/account/*`, and `/admin/*`. Enforcement uses middle
 4. System writes moderation audit log and notifies the listing owner by email.
 5. Weekly admin review checks false-positive rate and average review time.
 
-Estimated review time per report is 2 to 4 minutes. If volume exceeds 50 reports per day, add automatic duplicate-report clustering.
-
 ## User Flows
 
 1. Post item:

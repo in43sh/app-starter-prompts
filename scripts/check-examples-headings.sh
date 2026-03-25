@@ -66,6 +66,22 @@ check_heading_pattern() {
   fi
 }
 
+check_content_pattern() {
+  local relative_path="$1"
+  local description="$2"
+  local pattern="$3"
+
+  local file_path="$ROOT_DIR/$relative_path"
+
+  check_file_exists "$relative_path" || return
+
+  if ! rg -q "$pattern" "$file_path"; then
+    echo "Missing ${description} in $relative_path"
+    echo
+    failures=1
+  fi
+}
+
 check_literal_headings \
   "examples/00-kickoff-web-app/MVP_DOCUMENT.md" \
   "Project Overview" \
@@ -93,6 +109,11 @@ check_literal_headings \
   "examples/00-kickoff-web-app/DECISIONS.md" \
   "Summary"
 
+check_content_pattern \
+  "examples/00-kickoff-web-app/OPEN_QUESTIONS.md" \
+  "at least one open-question bullet" \
+  '^- '
+
 check_literal_headings \
   "examples/00-kickoff-api/API_DOCUMENT.md" \
   "Project Overview" \
@@ -118,6 +139,11 @@ check_heading_pattern \
 check_literal_headings \
   "examples/00-kickoff-api/DECISIONS.md" \
   "Summary"
+
+check_content_pattern \
+  "examples/00-kickoff-api/OPEN_QUESTIONS.md" \
+  "at least one open-question bullet" \
+  '^- '
 
 check_literal_headings \
   "examples/01-feature-spec/FEATURE_SPEC.md" \
@@ -158,6 +184,37 @@ check_literal_headings \
   "Environment variables" \
   "Do not" \
   "Where to start"
+
+check_literal_headings \
+  "examples/03-roadmap/ROADMAP.md" \
+  "Phase Summary Table" \
+  "Working Rules" \
+  "Decision Log" \
+  "Non-goals" \
+  "Open Questions"
+
+check_heading_pattern \
+  "examples/03-roadmap/ROADMAP.md" \
+  "at least one phase section" \
+  '^## Phase [0-9]+:'
+
+check_literal_headings \
+  "examples/03-roadmap/BUILD-STATUS.md" \
+  "Header" \
+  "Snapshot" \
+  "Done So Far" \
+  "Open Blockers"
+
+check_heading_pattern \
+  "examples/03-roadmap/BUILD-STATUS.md" \
+  "at least one phase workstreams section" \
+  '^## Phase [0-9]+ Workstreams$'
+
+check_literal_headings \
+  "examples/04-design/DESIGN_PROMPT.md" \
+  "Master Prompt" \
+  "Page Specs" \
+  "Component Variant Prompts"
 
 if ((failures > 0)); then
   echo "Example heading check failed."

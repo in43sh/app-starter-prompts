@@ -30,6 +30,8 @@ Finished sample outputs live in [`examples/`](examples):
 - [`examples/00-kickoff-api/`](examples/00-kickoff-api) — sample `API_DOCUMENT.md`, `DECISIONS.md`, `OPEN_QUESTIONS.md`
 - [`examples/01-feature-spec/`](examples/01-feature-spec) — sample `FEATURE_SPEC.md`, `IMPLEMENTATION_PLAN.md`
 - [`examples/02-claude-md/`](examples/02-claude-md) — sample `CLAUDE.md`
+- [`examples/03-roadmap/`](examples/03-roadmap) — sample `ROADMAP.md`, `BUILD-STATUS.md`
+- [`examples/04-design/`](examples/04-design) — sample `DESIGN_PROMPT.md`
 
 Use them to calibrate prompt changes and check whether generated outputs are concrete enough to implement.
 
@@ -38,7 +40,7 @@ Use them to calibrate prompt changes and check whether generated outputs are con
 - `docs/` is the source of truth for prompt behavior and required output sections.
 - `examples/` are canonical reference outputs and should stay structurally aligned with the current prompts.
 - If a prompt's output contract changes, update the corresponding files in `examples/` in the same PR.
-- Run `./scripts/check-examples-headings.sh` after changing `docs/` or `examples/`.
+- Run `./scripts/check-examples-headings.sh` and `./scripts/check-forbidden-patterns.sh` after changing `docs/` or `examples/`.
 
 ## Output documents
 
