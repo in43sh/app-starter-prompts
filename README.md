@@ -33,6 +33,13 @@ Finished sample outputs live in [`examples/`](examples):
 
 Use them to calibrate prompt changes and check whether generated outputs are concrete enough to implement.
 
+## Maintenance
+
+- `docs/` is the source of truth for prompt behavior and required output sections.
+- `examples/` are canonical reference outputs and should stay structurally aligned with the current prompts.
+- If a prompt's output contract changes, update the corresponding files in `examples/` in the same PR.
+- Run `./scripts/check-examples-headings.sh` after changing `docs/` or `examples/`.
+
 ## Output documents
 
 **Kickoff prompts** (`00-kickoff-*.md`) produce:

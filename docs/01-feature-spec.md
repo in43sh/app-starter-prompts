@@ -41,6 +41,7 @@ Output quality bar:
 - Which existing patterns should this feature follow? (naming conventions, folder structure, state management, API style)
 - Does this need new API endpoints, or does it extend existing ones?
 - Does this touch the database? (new table, new columns, migrations, indexes)
+- If this changes existing data, are migrations, backfills, or compatibility rules needed for existing records?
 - Are there third-party services involved? (storage, email, payments, etc.)
 
 ## Stage 5 — Integration & Rollout
@@ -62,7 +63,7 @@ A complete, self-contained spec for the feature. Include every section below:
 - **User Flows** — numbered step-by-step flows for every path (happy path, secondary flows, error paths). Include what the user sees and what the system does at each step.
 - **UI & Components** — every screen, modal, or state this feature introduces. For each: layout, all UI elements, copy, loading/empty/error states, responsive behavior.
 - **API Changes** — every new or modified endpoint (method, path, request shape, response shape, error cases). If none, omit.
-- **Data Changes** — new tables, new columns, migrations, indexes. Include field name, type, constraints, and purpose for each. If none, omit.
+- **Data Changes** — new tables, new columns, migrations, indexes. Include field name, type, constraints, purpose, any required backfill or migration steps, and compatibility rules for existing records. If none, omit.
 - **Permissions & Access Control** — who can access what, and how it's enforced (middleware, RLS, UI hiding, etc.)
 - **Edge Cases & Error Handling** — exhaustive list of edge cases and how each is handled
 - **Existing Flow Impact** — which current screens, APIs, jobs, or workflows change because of this feature, what behavior changes for existing users, and any backward-compatibility concerns

@@ -10,6 +10,8 @@
 
 - Keep questions stage-by-stage — don't collapse everything into one block
 - Output document specs should be precise enough for an AI to implement without follow-up questions
+- If you change required output sections, update the matching files in `examples/` in the same PR
+- Run `./scripts/check-examples-headings.sh` after changing `docs/` or `examples/`
 - Test the prompt against a real project before submitting
 
 ## Naming convention

@@ -2,7 +2,7 @@
 
 ## Task 1: Add `search_alerts` table
 
-- What it involves: Create the database table, indexes, and migration for storing saved filters and delivery metadata.
+- What it involves: Create the database table, indexes, and migration for storing saved filters and delivery metadata. No backfill is required because this is net-new data, but the stored filter payload must remain compatible with the app's current search query serialization.
 - Files to create or modify: `db/migrations/*`, `db/schema.sql`
 - Acceptance criteria: Migration applies cleanly and table supports CRUD for owned alerts.
 - Regression considerations: Existing search and account queries still perform within current latency budget.

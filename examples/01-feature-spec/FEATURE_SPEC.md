@@ -35,6 +35,7 @@ Add saved search alerts to an existing apartment rental app so signed-in renters
 | `search_alerts` | `id uuid pk`, `user_id uuid fk`, `name text`, `filters jsonb`, `frequency text`, `status text`, `last_sent_at timestamptz`, `created_at timestamptz` |
 
 Index `search_alerts(user_id, status)` and GIN index on `filters`.
+No backfill is required because alerts live in a new table. Existing search URLs remain compatible because `filters` reuse the app's current search query serialization format.
 
 ## Permissions & Access Control
 
