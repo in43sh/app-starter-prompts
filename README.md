@@ -19,6 +19,8 @@ A collection of structured AI prompts for kicking off new software projects. Use
 | [docs/00-kickoff-api.md](docs/00-kickoff-api.md) | API / backend project kickoff — produces `API_DOCUMENT.md`, `DECISIONS.md`, `OPEN_QUESTIONS.md` |
 | [docs/01-feature-spec.md](docs/01-feature-spec.md) | Plan a new feature in an existing project — produces `FEATURE_SPEC.md`, `IMPLEMENTATION_PLAN.md` |
 | [docs/02-claude-md.md](docs/02-claude-md.md) | Generate a `CLAUDE.md` quick-reference for an existing codebase |
+| [docs/03-roadmap.md](docs/03-roadmap.md) | Plan phased rollout and track build progress — produces `ROADMAP.md`, `BUILD-STATUS.md` |
+| [docs/04-design.md](docs/04-design.md) | Generate a reusable design system prompt for AI design tools — produces `DESIGN_PROMPT.md` |
 
 ## Examples
 
@@ -47,3 +49,12 @@ Use them to calibrate prompt changes and check whether generated outputs are con
 **CLAUDE.md generator** (`02-claude-md.md`) produces:
 
 - **CLAUDE.md** — AI quick-reference: stack, commands, structure, conventions, env vars, do-nots
+
+**Roadmap & build status** (`03-roadmap.md`) produces:
+
+- **ROADMAP.md** — phased plan with decision log, non-goals, success criteria, and exit gates per phase
+- **BUILD-STATUS.md** — live workstream tracker pre-populated from the spec, with source-of-truth pointers and task lists
+
+**Design system prompt** (`04-design.md`) produces:
+
+- **DESIGN_PROMPT.md** — master design prompt plus page-specific and component variant prompts for AI design tools (v0.dev, Bolt, Lovable, Stitch, Galileo)
