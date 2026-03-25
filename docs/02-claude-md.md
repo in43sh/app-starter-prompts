@@ -15,7 +15,6 @@ Output quality bar:
 - What does this project do, in 1–2 sentences?
 - Who uses it? (end users, developers, internal team, etc.)
 - What is the current state? (early prototype, production app, actively developed, maintenance mode)
-- Is there a deployed URL or repository I should reference?
 
 ## Stage 2 — Tech Stack
 
@@ -37,8 +36,6 @@ Output quality bar:
 
 - What commands are used for: install, dev server, build, test, lint?
 - How do environment variables work? (`.env`, `.env.local`, injected by CI, etc.)
-- What's the git branching strategy? (main + feature branches, develop, trunk-based, etc.)
-- How does deployment work? (push to branch, manual trigger, CI/CD pipeline)
 - Are there any non-obvious setup steps a new developer needs to know?
 - What must pass before a PR can merge? (required CI checks, test coverage thresholds, linting gates)
 

@@ -70,7 +70,7 @@ A complete design generation prompt for use with AI design tools. Include every 
 - Brand intro — name, personality, what to avoid, the overall feel
 - Brand & Colors — every color with its name, exact hex value, and usage rule (what it is used for, what it is not used for)
 - Typography — font family, every weight in use, every size with its usage context
-- Layout Rules — max content width, spacing grid, border radius, card style, shadow style, responsive behavior
+- Layout Rules — max content width, spacing rhythm, border radius, card style, shadow style, responsive behavior
 - Component Style — precise visual spec for every recurring element: exact colors, font weights, padding, border treatment, hover/active states, and any special variants. Be specific enough that no clarification is needed.
 - What to avoid — an explicit list of patterns, styles, and aesthetics this design must never use (e.g. "no gradients on primary surfaces", "no heavy drop shadows", "no centered hero text"). This prevents design tools from defaulting to generic patterns.
 

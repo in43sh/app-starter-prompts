@@ -16,14 +16,13 @@ Output quality bar:
 
 - What problem does this solve?
 - Who is it for? (end users, internal team, developers, etc.)
-- What does success look like in 3 months? In 1 year?
+- What does success look like at launch?
 - Is there an existing solution I'm replacing or extending?
 - Is there a Figma design or other visual reference?
 
-## Stage 2 — Users & Stakeholders
+## Stage 2 — Users & Flows
 
 - Who are the primary users?
-- Who are the stakeholders (people with opinions but not users)?
 - What are the core user flows? (what does a user actually *do*?)
 - What are the non-negotiable requirements vs. nice-to-haves?
 - Is there an admin or moderation workflow? Who manages the data, and how?
@@ -31,26 +30,22 @@ Output quality bar:
 ## Stage 3 — Scope & Constraints
 
 - What is explicitly out of scope for v1?
-- Are there deadlines, budget constraints, or team size limits?
 - Does this need to integrate with anything existing?
 - Any compliance, security, or privacy requirements? (auth, GDPR, HIPAA, etc.)
 - What third-party services will be used? (forms, payments, email, analytics, etc.)
 
 ## Stage 4 — Tech Stack
 
-- What platforms? (web, mobile, desktop, API-only)
+- What platforms? (web, mobile, desktop)
 - Any language/framework preferences or existing expertise?
 - What kind of data storage is needed? (relational, document, file, none)
 - Do I need real-time features, background jobs, file uploads, payments, auth?
 - Hosting preferences? (self-hosted, Vercel, AWS, etc.)
-- Open source or proprietary?
 - What's the design system? (colors, fonts — or should we define one?)
 
 ## Stage 5 — Project Structure
 
 - Monorepo or separate repos?
-- What does the `/docs` folder need to contain?
-- What's the branching/deployment strategy?
 
 After I answer, produce the following three documents:
 
@@ -65,7 +60,7 @@ A complete, self-contained implementation spec. Include every section below:
 - **Pages & Features** — each page/screen with all UI elements, component variants, and behavior described precisely enough to build from
 - **Data Architecture** — full database schema (field name, type, notes for every field), all API endpoints (method, path, purpose, query params, response shape)
 - **Permissions & Access Control** — user roles, protected routes/pages, role-specific UI states, and how access is enforced in the app and backend. Omit only if the project is fully public and has no privileged actions.
-- **Admin Workflow** — step-by-step process for any manual data management, time estimates, automation options
+- **Admin Workflow** — step-by-step process for any manual data management tasks
 - **User Flows** — numbered step-by-step flows for each primary use case
 - **Empty States** — what to show when there is no data, for each relevant section
 - **Responsive Breakpoints** — breakpoint table with layout behavior per screen size
@@ -75,7 +70,6 @@ A complete, self-contained implementation spec. Include every section below:
 - **Environment Variables** — client-side vs server-side split, `.env.example` with placeholder values, critical rules (e.g. what to never commit)
 - **Testing Strategy** — what to test at each level (unit, component, e2e), key flows to cover, recommended tools
 - **Implementation Order** — numbered build steps in the correct sequence
-- **Success Metrics** — what to measure post-launch
 
 ### 2. `DECISIONS.md`
 
@@ -86,7 +80,7 @@ An architectural decisions record (ADR) for every major technical choice (databa
 - **Why this choice:** 3–5 specific bullet reasons
 - **When to reconsider:** Concrete triggers for revisiting (e.g. "if we exceed X records" or "if we add auth")
 
-End with a summary table of all decisions and a one-sentence philosophy statement.
+End with a summary table of all decisions.
 
 ### 3. `OPEN_QUESTIONS.md`
 

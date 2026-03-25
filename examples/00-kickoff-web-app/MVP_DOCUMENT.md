@@ -154,7 +154,3 @@ Unit test validation schemas and moderation helpers. Component test listing form
 5. Build reservation flow and notifications.
 6. Build report and moderation workflow.
 7. Add analytics, Sentry, and E2E coverage.
-
-## Success Metrics
-
-Track weekly active listers, reservation conversion rate, median time from post to reservation, moderation turnaround time, and listing removal rate.

@@ -129,7 +129,3 @@ Write unit tests for idempotency key handling, webhook signing, and carrier stat
 4. Add carrier polling jobs and event persistence.
 5. Add webhook endpoint registration and delivery workers.
 6. Add rate limiting, metrics, and contract tests.
-
-## Success Metrics
-
-P95 API latency under 250ms for read endpoints, webhook delivery success above 99%, carrier polling freshness under 45 minutes, and less than 0.5% duplicate shipment conflicts caused by client retries.

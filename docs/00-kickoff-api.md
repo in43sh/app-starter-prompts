@@ -16,14 +16,13 @@ Output quality bar:
 
 - What problem does this solve?
 - Who or what consumes this? (web frontend, mobile app, third-party integrations, internal services, CLI users, etc.)
-- What does success look like in 3 months? In 1 year?
+- What does success look like at launch?
 - Is there an existing API or service I'm replacing or extending?
 - Is there an OpenAPI spec, Postman collection, or any existing contract to start from?
 
 ## Stage 2 — Consumers & Contracts
 
 - Who are the primary API consumers? (developers, services, automated scripts, etc.)
-- Who are the stakeholders (people with opinions but not consumers)?
 - What are the core operations the API must support? (what does a consumer actually *do*?)
 - What are the non-negotiable requirements vs. nice-to-haves?
 - Does the API need to be public, internal-only, or partner-facing?
@@ -32,7 +31,6 @@ Output quality bar:
 ## Stage 3 — Scope & Constraints
 
 - What is explicitly out of scope for v1?
-- Are there deadlines, budget constraints, or team size limits?
 - Does this need to integrate with anything existing? (databases, external APIs, message queues, etc.)
 - Any compliance, security, or privacy requirements? (GDPR, HIPAA, SOC 2, data residency, etc.)
 - SLA requirements? (uptime, response time, throughput targets)
@@ -50,12 +48,10 @@ Output quality bar:
 - Hosting preferences? (self-hosted, Vercel, Railway, Fly.io, AWS, etc.)
 - Contract-first (design OpenAPI spec first) or code-first?
 
-## Stage 5 — Project Structure
+## Stage 5 — Project Structure & Testing
 
 - Monorepo or separate repo?
-- What does the `/docs` folder need to contain?
 - What's the testing strategy? (unit, integration, e2e, contract tests)
-- What's the branching/deployment strategy?
 
 After I answer, produce the following three documents:
 
@@ -79,7 +75,6 @@ A complete, self-contained implementation spec. Include every section below:
 - **Environment Variables** — all vars, which are secret vs. safe to commit, `.env.example` contents
 - **Testing Strategy** — what to test at each level (unit, integration, e2e), key test cases to write first
 - **Implementation Order** — numbered build steps in the correct sequence
-- **Success Metrics** — latency targets, error rate thresholds, usage signals to track post-launch
 
 ### 2. `DECISIONS.md`
 
@@ -90,7 +85,7 @@ An architectural decisions record (ADR) for every major technical choice (runtim
 - **Why this choice:** 3–5 specific bullet reasons
 - **When to reconsider:** Concrete triggers for revisiting (e.g. "if throughput exceeds X" or "if we add multi-tenancy")
 
-End with a summary table of all decisions and a one-sentence philosophy statement.
+End with a summary table of all decisions.
 
 ### 3. `OPEN_QUESTIONS.md`
 

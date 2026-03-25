@@ -16,7 +16,6 @@ Output quality bar:
 
 - What is the feature, in one sentence?
 - What problem does it solve? What happens today without it?
-- Who requested it — users, stakeholders, or internal need?
 - What does success look like once it's shipped?
 - Is there a related design (Figma, sketch, mockup)?
 
@@ -43,7 +42,6 @@ Output quality bar:
 - Does this need new API endpoints, or does it extend existing ones?
 - Does this touch the database? (new table, new columns, migrations, indexes)
 - Are there third-party services involved? (storage, email, payments, etc.)
-- What's the target complexity budget? (quick fix, multi-day effort, or larger project)
 
 ## Stage 5 — Integration & Rollout
 
