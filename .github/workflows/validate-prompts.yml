@@ -18,10 +18,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y ripgrep
 
       - name: Make validation scripts executable
-        run: chmod +x scripts/check-examples-headings.sh scripts/check-forbidden-patterns.sh
+        run: chmod +x scripts/validate.sh scripts/check-examples-headings.sh scripts/check-forbidden-patterns.sh
 
-      - name: Validate example headings
-        run: ./scripts/check-examples-headings.sh
-
-      - name: Validate forbidden patterns
-        run: ./scripts/check-forbidden-patterns.sh
+      - name: Validate prompts
+        run: ./scripts/validate.sh

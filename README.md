@@ -40,7 +40,7 @@ Use them to calibrate prompt changes and check whether generated outputs are con
 - `docs/` is the source of truth for prompt behavior and required output sections.
 - `examples/` are canonical reference outputs and should stay structurally aligned with the current prompts.
 - If a prompt's output contract changes, update the corresponding files in `examples/` in the same PR.
-- Run `./scripts/check-examples-headings.sh` and `./scripts/check-forbidden-patterns.sh` after changing `docs/` or `examples/`.
+- Run `./scripts/validate.sh` after changing `docs/` or `examples/`.
 
 ## Output documents
 
